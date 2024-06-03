@@ -29,6 +29,7 @@ mod:AddSetIconOption("IceBoltIcon", 31249, false, false, {8})
 
 function mod:OnCombatStart(delay)
 	berserkTimer:Start(-delay)
+	timerDnD:Start(24-delay)
 end
 
 function mod:SPELL_AURA_APPLIED(args)
